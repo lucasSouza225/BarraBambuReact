@@ -1,0 +1,7 @@
+# Frontend
+cd frontend
+npm run build
+
+# Backend (produção)
+cd ../backend
+npm start

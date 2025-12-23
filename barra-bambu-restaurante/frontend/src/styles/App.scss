@@ -1,0 +1,46 @@
+// Variáveis
+$primary-color: #FFD301;
+$secondary-color: #719A0A;
+$dark-bg: #38241B;
+$light-bg: #f7f4e9;
+$text-dark: #333;
+$text-light: #969696;
+
+// Reset e estilos globais
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: $light-bg;
+  color: $text-dark;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+// Botões personalizados
+.btn-primary-custom {
+  background-color: $primary-color;
+  color: $dark-bg;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $secondary-color;
+    color: white;
+    transform: translateY(-2px);
+  }
+}
